@@ -3,7 +3,7 @@
 
 # webpack配置文件
 根目录下新建一个名为webpack.config.js的文件
-const webpack = require('webpack');<br/>
+  const webpack = require('webpack');<br/>
 const HtmlWebpackPlugin = require('html-webpack-plugin');<br/>
 const ExtractTextPlugin = require('extract-text-webpack-plugin');<br/>
 
