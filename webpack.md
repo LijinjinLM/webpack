@@ -164,7 +164,8 @@ module.exports = {
   只需要在CSS loader中进行简单配置即可，然后就可以直接把CSS的类名传递到组件的代码中，这样做有效避免了全局污染
   
   {
-        loader: "css-loader",
+  
+       loader: "css-loader",
         
         options: {
         
@@ -184,9 +185,11 @@ module.exports = {
   
   （plugins是一个数组），添加了一个给打包后代码添加版权声明的插件。
   
-    ``` plugins: [
+    plugins: [
+    
         new webpack.BannerPlugin('版权所有，翻版必究')
-    ] ```
+        
+    ] 
     
  下面给大家推荐几个常用的插件
  
