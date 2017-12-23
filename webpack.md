@@ -193,19 +193,25 @@ module.exports = {
     
  下面给大家推荐几个常用的插件
  
-  HtmlWebpackPlugin:这个插件的作用是依据一个简单的index.html模板，生成一个自动引用你打包后的JS文件的新index.html。
+    (1). HtmlWebpackPlugin:这个插件的作用是依据一个简单的index.html模板，生成一个自动引用你打包后的JS文件的新index.html。
   
-   ```npm install --save-dev html-webpack-plugin```<br/>
+          ```npm install --save-dev html-webpack-plugin```<br/>
 
-  Hot Module Replacement:是webpack里很有用的一个插件，它允许你在修改组件代码后，自动刷新实时预览修改后的效果
+    (2).Hot Module Replacement:是webpack里很有用的一个插件，它允许你在修改组件代码后，自动刷新实时预览修改后的效果
   
-  Babel有一个叫做react-transform-hrm的插件
+    (3).Babel有一个叫做react-transform-hrm的插件
   
-  ```npm install --save-dev babel-plugin-react-transform react-transform-hmr```
+     ```npm install --save-dev babel-plugin-react-transform react-transform-hmr```
   
 # 优化插件
 
-   OccurenceOrderPlugin，UglifyJsPlugin，ExtractTextPlugin,OccurenceOrder 和 UglifyJS plugins 都是内置插件，
+   1.OccurenceOrderPlugin
+   
+   2.UglifyJsPlugin
+   
+   3.ExtractTextPlugin,
+   
+   OccurenceOrder 和 UglifyJS plugins 都是内置插件，
    
    你需要做的只是安装其它非内置插件
    
@@ -223,8 +229,8 @@ module.exports = {
    
 # pack.json
 
- 如果是window电脑，build需要配置为
+  如果是window电脑，build需要配置为
  
  "build": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress".
 
-参考链接：https://www.jianshu.com/p/42e11515c10f
+  参考链接：https://www.jianshu.com/p/42e11515c10f
