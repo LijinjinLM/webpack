@@ -4,9 +4,7 @@
    
    它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript
    
-   等），并将其转换和打包为合适的格式
-   
-   供浏览器使用。
+   等），并将其转换和打包为合适的格式供浏览器使用。
 
 # webpack配置文件
 
@@ -153,11 +151,11 @@ module.exports = {
   
 # Babel的安装与配置
 
-  Babel其实是几个模块化的包，其核心功能位于称为babel-core的npm包中，webpack可以把其不同的包整合在一起使用，对于每一
+  Babel其实是几个模块化的包，其核心功能位于称为babel-core的npm包中，webpack可以把其不同的包整合在一起使用，对于
   
-  个你需要的功能或拓展，你都需要安装单独的包（用得最多的是解析Es6的babel-env-preset包和解析JSX的babel-preset-react包）。
+  每一个你需要的功能或拓展，你都需要安装单独的包（用得最多的是解析Es6的babel-env-preset包和解析JSX的
   
-  一次性安装这些依赖包
+  babel-preset-react包）。一次性安装这些依赖包
   
   ```npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react  ```
   
@@ -167,9 +165,13 @@ module.exports = {
   
   {
         loader: "css-loader",
+        
         options: {
+        
             modules: true, // 指定启用css modules
-            localIdentName: '[name]__[local]--[hash:base64:5]' // 指定css的类名格式          
+            
+            localIdentName: '[name]__[local]--[hash:base64:5]' // 指定css的类名格式 
+            
   } 
   
 # CSS预处理器
@@ -207,6 +209,7 @@ module.exports = {
    ```npm install --save-dev extract-text-webpack-plugin```
    
 # 缓存
+
   webpack可以把一个哈希值添加到打包的文件名中,添加特殊的字符串混合体（[name], [id] and [hash]）到输出文件名前
   
 # 去除build文件中的残余文件
