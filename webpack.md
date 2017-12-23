@@ -195,13 +195,13 @@ module.exports = {
  
  (1). HtmlWebpackPlugin:这个插件的作用是依据一个简单的index.html模板，生成一个自动引用你打包后的JS文件的新index.html。
   
-      ```npm install --save-dev html-webpack-plugin```
+  ```npm install --save-dev html-webpack-plugin```
 
  (2).Hot Module Replacement:是webpack里很有用的一个插件，它允许你在修改组件代码后，自动刷新实时预览修改后的效果
   
  (3).Babel有一个叫做react-transform-hrm的插件
   
-     ```npm install --save-dev babel-plugin-react-transform react-transform-hmr```
+ ```npm install --save-dev babel-plugin-react-transform react-transform-hmr```
   
 # 优化插件
 
